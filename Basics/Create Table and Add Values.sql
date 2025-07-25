@@ -6,7 +6,7 @@ Create Table Artists(artistId int IDENTITY(1,1) NOT NULL PRIMARY KEY, ArtistName
 Go
 
 Create Table Genres(GenreId int IDENTITY(1,1) NOT NULL PRIMARY KEY, Genre nvarchar(50) NOT NULL );
----------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------
 CREATE TABLE Albums (
   AlbumId int IDENTITY(1,1) NOT NULL PRIMARY KEY,
   AlbumName nvarchar(255) NOT NULL,
@@ -20,7 +20,7 @@ CONSTRAINT FK_Albums_Artists FOREIGN KEY (ArtistId)
   ON UPDATE NO ACTION    
 );
 
----------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------
 
 INSERT INTO Artists (ArtistName, ActiveFrom)
 VALUES 
@@ -42,7 +42,7 @@ VALUES
   ('Bodyjar','1990-01-01');
 
  SELECT * FROM Artists;
----------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------
 
  INSERT INTO Genres (Genre) VALUES 
   ('Rock'),
@@ -55,7 +55,7 @@ VALUES
   ('Punk');
 
  SELECT * FROM Genres;
----------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------
 
 INSERT INTO Albums (AlbumName, ReleaseDate, ArtistId, GenreId)
 VALUES 
@@ -81,7 +81,7 @@ VALUES
   ('The Sixteen Men of Tain', '2000-03-20', 3, 2);
 
 SELECT * FROM Albums;
----------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------
 
 -- Albums released before 1990 (with artist name) --
 
@@ -89,11 +89,11 @@ SELECT AlbumID, AlbumName, ArtistName
 FROM Albums
 INNER JOIN Artists ON Albums.ArtistId = Artists.ArtistId
 WHERE ReleaseDate < '1990-01-01';
----------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------
 
 -- Count of Album
 SELECT COUNT(DISTINCT AlbumName) FROM Albums;
----------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------
 
 
 
