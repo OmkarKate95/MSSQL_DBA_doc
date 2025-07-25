@@ -33,7 +33,7 @@ If exists(
 
 -- Loading Values from #CPU to DBA.dbo.CPU
 
-if exists(
+If exists(
 			Select * from DBA.sys.tables
 			where name = 'CPU_info'
 		)
@@ -43,7 +43,7 @@ if exists(
 			Select * from #CPU
 	END
 
-else
+ELSE
 	BEGIN
 		-- Destination tabel not avilavle
 			Select * into DBA.dbo.CPU_info
