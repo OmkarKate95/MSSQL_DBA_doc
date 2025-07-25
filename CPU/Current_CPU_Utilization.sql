@@ -15,8 +15,8 @@
        DATEADD(ms,-1 *(@ts - [timestamp]),GETDATE())AS [Event_Time]
 
        FROM (SELECT record.value('(./Record/@id)[1]','int')AS record_id,
-					record.value('(./Record/SchedulerMonitorEvent/SystemHealth/SystemIdle)[1]','int')AS 	[SystemIdle],
-					record.value('(./Record/SchedulerMonitorEvent/SystemHealth/ProcessUtilization)	[1]','int')AS [SQLProcessUtilization],
+					record.value('(./Record/SchedulerMonitorEvent/SystemHealth/SystemIdle)[1]','int')AS [SystemIdle],
+					record.value('(./Record/SchedulerMonitorEvent/SystemHealth/ProcessUtilization)[1]','int')AS [SQLProcessUtilization],
        	[timestamp]
               
 		FROM (SELECT[timestamp], convert(xml, record) AS [record]
@@ -25,7 +25,7 @@
        AND record LIKE'%%')AS x
        )AS y
        ORDER BY record_id DESC;
- 
+------------------------------------------------------------------------------------------------------------------------------------------------
 
 --STEP 2
 
@@ -35,7 +35,7 @@
        SELECT * FROM sys.sysprocesses
        WHERE spid >50 and STATUS<>'sleeping'
 	   ORDER BY CPU DESC;
-
+------------------------------------------------------------------------------------------------------------------------------------------------
  
 --Step 3
 
@@ -46,8 +46,7 @@
        FROM sys.dm_exec_requests qs
        CROSS APPLY sys.dm_exec_query_plan(qs.plan_handle)
        WHERE session_id=52
-
- 
+------------------------------------------------------------------------------------------------------------------------------------------------
 
 --Step 4
 
@@ -59,7 +58,7 @@
        GROUP BY spid
        HAVING COUNT(spid)>1
  
-
+-------------------------------------------------------------
        --WaitType count more than 1
 
        SELECT spid , lastwaittype, COUNT(spid)
@@ -67,9 +66,11 @@
        WHERE spid >50 and STATUS<>'sleeping'
        GROUP BY spid,lastwaittype
        HAVING COUNT(spid)>1
+------------------------------------------------------------
 
 	-- Check Plan for top SPID
 	SELECT * FROM sys.dm_exec_requests qs 
 	CROSS APPLY sys.dm_exec_query_plan(qs.plan_handle)
 	WHERE session_id=50
+------------------------------------------------------------------------------------------------------------------------------------------------
 
