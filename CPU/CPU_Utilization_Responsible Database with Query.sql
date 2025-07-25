@@ -19,7 +19,7 @@ WHERE DatabaseID > 4 -- system databases
 AND DatabaseID <> 32767 -- ResourceDB
 ORDER BY row_num
 OPTION(RECOMPILE);
-
+------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 -- To this script you can get responsible query from that database 
@@ -44,6 +44,7 @@ FROM
 
 GROUP BY query_stats.query_hash
 ORDER BY 2 DESC;
+------------------------------------------------------------------------------------------------------------------------------------------------
 
 -- Used to identify active sessions consuming the most CPU in SQL Server
 
@@ -51,3 +52,4 @@ SELECT spid, kpid, status, cpu, memusage, open_tran, dbid, db_name(dbid)
 FROM sysprocesses  
 WHERE spid > 50  
 ORDER BY cpu DESC;
+------------------------------------------------------------------------------------------------------------------------------------------------
