@@ -20,6 +20,7 @@ FROM   (SELECT record.value('(./Record/@id)[1]', 'int') AS record_id,
          WHERE  ring_buffer_type = N'RING_BUFFER_SCHEDULER_MONITOR'
             AND record LIKE '%<SystemHealth>%') AS x) AS y
 ORDER BY record_id DESC;
+------------------------------------------------------------------------------------------------------------------------------------------------
 
 -- Use this along with real-time DMV queries like--
 
@@ -29,4 +30,5 @@ FROM sys.dm_exec_requests r
 JOIN sys.dm_exec_sessions s ON r.session_id = s.session_id
 CROSS APPLY sys.dm_exec_sql_text(r.sql_handle) t
 ORDER BY r.cpu_time DESC;
+------------------------------------------------------------------------------------------------------------------------------------------------
 
