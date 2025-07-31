@@ -6,7 +6,7 @@
 | DBCC checkconstraints		|-- Checks integrity of constraints for a table.			             |
 | DBCC checkdb			|-- Checks overall logical and physical integrity of all database objects.    |  
 | DBCC checkfilegroup		|-- Checks integrity of specified filegroup.				     |  
-| DBCC checkident		|-- Checks and resets the identity value for a table.			      |
+| DBCC checkident		|-- Checks and resets the identity value for a table.			     |
 | DBCC checktable		|-- Checks integrity of all pages and structures of a table or indexed view.  |
 | DBCC cleantable		|-- Removes ghost rows from a specified table.		                     |
 | DBCC dbreindex		|-- Rebuilds one or more indexes for a table (deprecated; use `ALTER INDEX`)  |
@@ -19,9 +19,9 @@
 | DBCC help			|-- Lists all available DBCC commands or explains a specific one.	     |
 | DBCC indexdefrag		|-- Defragments clustered and secondary indexes (deprecated).		     |
 | DBCC inputbuffer		|-- Returns the last statement sent from a client to SQL Server.	             |
-| DBCC opentran			|-- Displays information about the oldest open transaction.	              |
-| DBCC outputbuffer		|-- Displays the output buffer of a specified SPID.					|
-| DBCC pintable			|-- Pins a table in memory (deprecated).							|
+| DBCC opentran			|-- Displays information about the oldest open transaction.	             |
+| DBCC outputbuffer		|-- Displays the output buffer of a specified SPID.			|
+| DBCC pintable			|-- Pins a table in memory (deprecated).					|
 | DBCC proccache		|-- Displays information about procedure cache usage.			     |
 | DBCC show_statistics		|-- Displays statistics information for a table or indexed view.             |  
 | DBCC showcontig		|-- Displays fragmentation information for data/index pages.		     |
