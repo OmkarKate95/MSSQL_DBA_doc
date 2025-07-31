@@ -14,7 +14,7 @@
 | DBCC flushauthcache		|-- Clears authentication cache entries.					     |  
 | DBCC free			|-- Displays memory information (obsolete in newer versions).		     |
 | DBCC freeproccache		|-- Clears the procedure cache (removes compiled plans).		             |  
-| DBCC freesessioncache		|-- Clears the session--specific cache.							|  
+| DBCC freesessioncache		|-- Clears the session--specific cache.					|  
 | DBCC freesystemcache		|-- Clears system--wide caches									|  
 | DBCC help			|-- Lists all available DBCC commands or explains a specific one.		|
 | DBCC indexdefrag		|-- Defragments clustered and secondary indexes (deprecated).		|
