@@ -32,7 +32,7 @@
 | sp_ms_marksystemobject    |-- Marks a procedure as a system object (internal use).                      |
 | sp_adduser		    |-- Adds a user to the database (deprecated).				     |
 | sp_addrole		    |-- Adds a new database role.						     |
-| sp_addrolemember	    |-- Adds a user to a role.						    |
+| sp_addrolemember	    |-- Adds a user to a role.						     |
 | sp_droprolemember	    |-- Removes a user from a role.						     |
 | sp_droprole		    |-- Deletes a database role.						     |
 | ------------------------- | ----------------------------------------------------------------------------|
