@@ -29,10 +29,10 @@
 | DBCC shrinkfile		|-- Shrinks a specified data or log file.						|
 | DBCC sqlperf			|-- Reports on SQL Server performance statistics like log space.	      |
 | DBCC traceoff			|-- Disables a specified trace flag.	    				     |
-| DBCC traceon			|-- Enables a specified trace flag.							|
-| DBCC tracestatus		|-- Displays status of trace flags.							|
-| DBCC tuplemover		|-- Internal use for columnstore indexes; manages tuple movements.	      |
-| DBCC unpintable		|-- Unpins a table from memory (deprecated).						|
-| DBCC updateusage		|-- Reports and corrects page and row count inaccuracies.	          |
-| DBCC useroptions		|-- Returns SET options active for the current session.		          |
+| DBCC traceon			|-- Enables a specified trace flag.						|
+| DBCC tracestatus		|-- Displays status of trace flags.					|
+| DBCC tuplemover		|-- Internal use for columnstore indexes; manages tuple movements.	     |
+| DBCC unpintable		|-- Unpins a table from memory (deprecated).				|
+| DBCC updateusage		|-- Reports and corrects page and row count inaccuracies.	            |
+| DBCC useroptions		|-- Returns SET options active for the current session.		            |
 | ----------------------------- | ----------------------------------------------------------------------------|
