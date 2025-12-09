@@ -32,10 +32,11 @@
 | DBCC traceon			        |-- Enables a specified trace flag.					     |
 | DBCC tracestatus		        |-- Displays status of trace flags.					     |
 | DBCC tuplemover		        |-- Internal use for columnstore indexes; manages tuple movements.	         |
-| DBCC unpintable		        |-- Unpins a table from memory (deprecated).				                 |
+| DBCC unpintable		        |-- Unpins a table from memory (deprecated).				                     |
 | DBCC updateusage	    	    |-- Reports and corrects page and row count inaccuracies.	                 |
 | DBCC useroptions		        |-- Returns SET options active for the current session.		                 |
 | ----------------------------- | ----------------------------------------------------------------------------|
+
 
 
 
