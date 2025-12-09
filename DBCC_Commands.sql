@@ -12,11 +12,11 @@
 | DBCC dbreindex		        |-- Rebuilds one or more indexes for a table (deprecated; use `ALTER INDEX`)  |
 | DBCC dropcleanbuffers		    |-- Removes all clean buffers from the buffer pool.			     |  
 | DBCC flushauthcache		    |-- Clears authentication cache entries.					     |  
-| DBCC free			         |-- Displays memory information (obsolete in newer versions).		     |
+| DBCC free			             |-- Displays memory information (obsolete in newer versions).		     |
 | DBCC freeproccache		    |-- Clears the procedure cache (removes compiled plans).		             |  
 | DBCC freesessioncache		    |-- Clears the session--specific cache.					     |  
 | DBCC freesystemcache		    |-- Clears system--wide caches					             |  
-| DBCC help			          |-- Lists all available DBCC commands or explains a specific one.	     |
+| DBCC help			            |-- Lists all available DBCC commands or explains a specific one.	     |
 | DBCC indexdefrag		        |-- Defragments clustered and secondary indexes (deprecated).		     |
 | DBCC inputbuffer		        |-- Returns the last statement sent from a client to SQL Server.	             |
 | DBCC opentran			        |-- Displays information about the oldest open transaction.	             |
@@ -33,9 +33,10 @@
 | DBCC tracestatus		        |-- Displays status of trace flags.					     |
 | DBCC tuplemover		        |-- Internal use for columnstore indexes; manages tuple movements.	     |
 | DBCC unpintable		        |-- Unpins a table from memory (deprecated).				     |
-| DBCC updateusage	    	   |-- Reports and corrects page and row count inaccuracies.	             |
+| DBCC updateusage	    	    |-- Reports and corrects page and row count inaccuracies.	             |
 | DBCC useroptions		        |-- Returns SET options active for the current session.		             |
 | ----------------------------- | ----------------------------------------------------------------------------|
+
 
 
 
