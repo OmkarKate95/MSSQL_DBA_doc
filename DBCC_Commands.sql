@@ -12,7 +12,7 @@
 | DBCC dbreindex		        |-- Rebuilds one or more indexes for a table (deprecated; use `ALTER INDEX`)  |
 | DBCC dropcleanbuffers		    |-- Removes all clean buffers from the buffer pool.			     |  
 | DBCC flushauthcache		    |-- Clears authentication cache entries.					     |  
-| DBCC free			             |-- Displays memory information (obsolete in newer versions).		     |
+| DBCC free			            |-- Displays memory information (obsolete in newer versions).		     |
 | DBCC freeproccache		    |-- Clears the procedure cache (removes compiled plans).		             |  
 | DBCC freesessioncache		    |-- Clears the session--specific cache.					     |  
 | DBCC freesystemcache		    |-- Clears system--wide caches					             |  
@@ -36,6 +36,7 @@
 | DBCC updateusage	    	    |-- Reports and corrects page and row count inaccuracies.	             |
 | DBCC useroptions		        |-- Returns SET options active for the current session.		             |
 | ----------------------------- | ----------------------------------------------------------------------------|
+
 
 
 
