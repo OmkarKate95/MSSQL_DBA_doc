@@ -6,9 +6,9 @@
 | DBCC checkconstraints		    |-- Checks integrity of constraints for a table.			                     |
 | DBCC checkdb			        |-- Checks overall logical and physical integrity of all database objects.    |  
 | DBCC checkfilegroup		    |-- Checks integrity of specified filegroup.				             |  
-| DBCC checkident		        |-- Checks and resets the identity value for a table.			         |
-| DBCC checktable		        |-- Checks integrity of all pages and structures of a table or indexed view.    |
-| DBCC cleantable		        |-- Removes ghost rows from a specified table.		                       |
+| DBCC checkident		        |-- Checks and resets the identity value for a table.			            |
+| DBCC checktable		        |-- Checks integrity of all pages and structures of a table or indexed view.   |
+| DBCC cleantable		        |-- Removes ghost rows from a specified table.		                         |
 | DBCC dbreindex		        |-- Rebuilds one or more indexes for a table (deprecated; use `ALTER INDEX`)  |
 | DBCC dropcleanbuffers		    |-- Removes all clean buffers from the buffer pool.			     |  
 | DBCC flushauthcache		    |-- Clears authentication cache entries.					                     |  
@@ -36,6 +36,7 @@
 | DBCC updateusage	    	    |-- Reports and corrects page and row count inaccuracies.	                 |
 | DBCC useroptions		        |-- Returns SET options active for the current session.		                 |
 | ----------------------------- | ----------------------------------------------------------------------------|
+
 
 
 
