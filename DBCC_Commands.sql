@@ -1,9 +1,9 @@
 | ----------------------------- | ----------------------------------------------------------------------------|
 |-- Command                     |-- Use                                                                       |
 | ----------------------------- | ----------------------------------------------------------------------------|
-| DBCC checkalloc		        |-- Checks and reports allocation consistency of database pages.               |			  
-| DBCC checkcatalog		        |-- Checks for catalog consistency within the database.			            |			  
-| DBCC checkconstraints		    |-- Checks integrity of constraints for a table.			                    |
+| DBCC checkalloc		        |-- Checks and reports allocation consistency of database pages.              |			  
+| DBCC checkcatalog		        |-- Checks for catalog consistency within the database.			             |			  
+| DBCC checkconstraints		    |-- Checks integrity of constraints for a table.			                     |
 | DBCC checkdb			        |-- Checks overall logical and physical integrity of all database objects.    |  
 | DBCC checkfilegroup		    |-- Checks integrity of specified filegroup.				     |  
 | DBCC checkident		        |-- Checks and resets the identity value for a table.			     |
@@ -36,6 +36,7 @@
 | DBCC updateusage	    	    |-- Reports and corrects page and row count inaccuracies.	                 |
 | DBCC useroptions		        |-- Returns SET options active for the current session.		                 |
 | ----------------------------- | ----------------------------------------------------------------------------|
+
 
 
 
