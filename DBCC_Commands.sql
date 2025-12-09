@@ -8,14 +8,14 @@
 | DBCC checkfilegroup		    |-- Checks integrity of specified filegroup.				             |  
 | DBCC checkident		        |-- Checks and resets the identity value for a table.			         |
 | DBCC checktable		        |-- Checks integrity of all pages and structures of a table or indexed view.    |
-| DBCC cleantable		        |-- Removes ghost rows from a specified table.		                         |
+| DBCC cleantable		        |-- Removes ghost rows from a specified table.		                       |
 | DBCC dbreindex		        |-- Rebuilds one or more indexes for a table (deprecated; use `ALTER INDEX`)  |
 | DBCC dropcleanbuffers		    |-- Removes all clean buffers from the buffer pool.			     |  
-| DBCC flushauthcache		    |-- Clears authentication cache entries.					                       |  
+| DBCC flushauthcache		    |-- Clears authentication cache entries.					                     |  
 | DBCC free			            |-- Displays memory information (obsolete in newer versions).		         |
 | DBCC freeproccache		    |-- Clears the procedure cache (removes compiled plans).		                 |  
-| DBCC freesessioncache		    |-- Clears the session--specific cache.					                      |  
-| DBCC freesystemcache		    |-- Clears system--wide caches					                              |  
+| DBCC freesessioncache		    |-- Clears the session--specific cache.					                     |  
+| DBCC freesystemcache		    |-- Clears system--wide caches					                             |  
 | DBCC help			            |-- Lists all available DBCC commands or explains a specific one.	         |
 | DBCC indexdefrag		        |-- Defragments clustered and secondary indexes (deprecated).		         |
 | DBCC inputbuffer		        |-- Returns the last statement sent from a client to SQL Server.	             |
@@ -36,6 +36,7 @@
 | DBCC updateusage	    	    |-- Reports and corrects page and row count inaccuracies.	                 |
 | DBCC useroptions		        |-- Returns SET options active for the current session.		                 |
 | ----------------------------- | ----------------------------------------------------------------------------|
+
 
 
 
