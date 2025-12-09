@@ -22,10 +22,10 @@
 | DBCC opentran			        |-- Displays information about the oldest open transaction.	                 |
 | DBCC outputbuffer		        |-- Displays the output buffer of a specified SPID.			     |
 | DBCC pintable			        |-- Pins a table in memory (deprecated).					                     |
-| DBCC proccache		        |-- Displays information about procedure cache usage.			     |
+| DBCC proccache		        |-- Displays information about procedure cache usage.			             |
 | DBCC show_statistics		    |-- Displays statistics information for a table or indexed view.              |  
-| DBCC showcontig		        |-- Displays fragmentation information for data/index pages.		     |
-| DBCC shrinkdatabase		    |-- Shrinks the size of the data and log files in a database.	               | 
+| DBCC showcontig		        |-- Displays fragmentation information for data/index pages.		             |
+| DBCC shrinkdatabase		    |-- Shrinks the size of the data and log files in a database.	              | 
 | DBCC shrinkfile		        |-- Shrinks a specified data or log file.				     |
 | DBCC sqlperf			        |-- Reports on SQL Server performance statistics like log space.	             |
 | DBCC traceoff			        |-- Disables a specified trace flag.	    				                     |
@@ -36,6 +36,7 @@
 | DBCC updateusage	    	    |-- Reports and corrects page and row count inaccuracies.	                 |
 | DBCC useroptions		        |-- Returns SET options active for the current session.		                 |
 | ----------------------------- | ----------------------------------------------------------------------------|
+
 
 
 
