@@ -20,7 +20,7 @@
 | DBCC indexdefrag		        |-- Defragments clustered and secondary indexes (deprecated).		         |
 | DBCC inputbuffer		        |-- Returns the last statement sent from a client to SQL Server.	             |
 | DBCC opentran			        |-- Displays information about the oldest open transaction.	                 |
-| DBCC outputbuffer		        |-- Displays the output buffer of a specified SPID.			                  |
+| DBCC outputbuffer		        |-- Displays the output buffer of a specified SPID.			                 |
 | DBCC pintable			        |-- Pins a table in memory (deprecated).					                     |
 | DBCC proccache		        |-- Displays information about procedure cache usage.			             |
 | DBCC show_statistics		    |-- Displays statistics information for a table or indexed view.              |  
@@ -36,6 +36,7 @@
 | DBCC updateusage	    	    |-- Reports and corrects page and row count inaccuracies.	                 |
 | DBCC useroptions		        |-- Returns SET options active for the current session.		                 |
 | ----------------------------- | ----------------------------------------------------------------------------|
+
 
 
 
