@@ -17,8 +17,8 @@
 | DBCC freesessioncache		|-- Clears the session--specific cache.					     |  
 | DBCC freesystemcache		|-- Clears system--wide caches					             |  
 | DBCC help			|-- Lists all available DBCC commands or explains a specific one.	     |
-| DBCC indexdefrag		|-- Defragments clustered and secondary indexes (deprecated).		     |
-| DBCC inputbuffer		|-- Returns the last statement sent from a client to SQL Server.	             |
+| DBCC indexdefrag		        |-- Defragments clustered and secondary indexes (deprecated).		     |
+| DBCC inputbuffer		        |-- Returns the last statement sent from a client to SQL Server.	             |
 | DBCC opentran			|-- Displays information about the oldest open transaction.	             |
 | DBCC outputbuffer		|-- Displays the output buffer of a specified SPID.			     |
 | DBCC pintable			|-- Pins a table in memory (deprecated).					     |
@@ -36,6 +36,7 @@
 | DBCC updateusage		|-- Reports and corrects page and row count inaccuracies.	             |
 | DBCC useroptions		|-- Returns SET options active for the current session.		             |
 | ----------------------------- | ----------------------------------------------------------------------------|
+
 
 
 
